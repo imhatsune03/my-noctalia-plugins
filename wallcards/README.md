@@ -35,3 +35,8 @@ A high-performance wallpaper manager and carousel for **Noctalia v5** supporting
 | `P` | Toggle **Live Preview** |
 | `R` | **Shuffle** random wallpaper |
 | `Esc` / `Q` | Close panel |
+
+# How to run
+In panel will spawn a icon of wallpaper on panel only click and plugin opens
+or you run a plugin with a terminal
+```noctalia msg panel-toggle tonigineer/wallcards:main```
