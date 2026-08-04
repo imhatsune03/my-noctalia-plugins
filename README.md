@@ -6,5 +6,5 @@ written in c++
 This repo is a hobbie 
 
 # How to install this repo
-```noctalia msg plugins source add my-repo git https://github.com/imhatsune03/my-noctalia-plugins```
+```noctalia msg plugins source add my-noctalia-plugins git https://github.com/imhatsune03/my-noctalia-plugins```
 
