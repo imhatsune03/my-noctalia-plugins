@@ -63,4 +63,7 @@ capture_keys = [
   "right",
   "up",
   "down",
+  "1",
+  "2",
+  "f5",
 ]

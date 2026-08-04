@@ -13,5 +13,5 @@ This repo is a hobbie
 3. Open Settings → Plugins → Install and select wallcards
 
 # Method 2: Installa via Terminal
-```noctalia msg plugins source add my-noctalia-plugins git https://github.com/imhatsune03/my-noctalia-plugins```
+```noctalia msg plugins source add Hatplugins git https://github.com/imhatsune03/my-noctalia-plugins```
 

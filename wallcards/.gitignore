@@ -1,0 +1,15 @@
+# Backups and temporary files
+*.save
+*.bak
+*.tmp
+*~
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Cache directory (if created locally)
+.cache/
+thumbnails/

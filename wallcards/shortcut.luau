@@ -30,11 +30,11 @@ function update()
 end
 
 function onClick()
-  noctalia.togglePanel("tonigineer/wallcards:main")
+  noctalia.togglePanel("imhatsune/wallcards:main")
 end
 
 function onActivate()
-  noctalia.togglePanel("tonigineer/wallcards:main")
+  noctalia.togglePanel("imhatsune/wallcards:main")
 end
 
 function onRightClick()
