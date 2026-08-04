@@ -6,5 +6,12 @@ written in c++
 This repo is a hobbie 
 
 # How to install this repo
+
+# Method 1: Graphical install
+1. Open Settings → Plugins → Sources
+2. Choose Add custom repository
+3. Open Settings → Plugins → Install and select wallcards
+
+# Method 2: Installa via Terminal
 ```noctalia msg plugins source add my-noctalia-plugins git https://github.com/imhatsune03/my-noctalia-plugins```
 
