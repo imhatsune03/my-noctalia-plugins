@@ -1,0 +1,66 @@
+id = "tonigineer/wallcards"
+name = "Wallcards"
+version = "0.4.0"
+plugin_api = 16
+author = "tonigineer"
+license = "MIT"
+description = "A unified wallpaper manager and carousel for static images and video wallpapers (via gslapper) with dynamic shell theming and auto-refresh. Dependencies: imagemagick, gslapper, ffmpeg."
+tags = ["desktop", "theming", "wallpaper", "video", "gslapper"]
+dependencies = ["imagemagick", "gslapper", "ffmpeg"]
+
+[[setting]]
+key = "wallpaper_dir"
+type = "folder"
+label_key = "settings.wallpaper_dir.label"
+description_key = "settings.wallpaper_dir.description"
+default = "~/Imágenes/Wallpapers"
+
+[[setting]]
+key = "card_height"
+type = "int"
+label_key = "settings.card_height.label"
+description_key = "settings.card_height.description"
+default = 230
+min = 180
+max = 340
+step = 10
+
+[[setting]]
+key = "icon_color"
+type = "color"
+label_key = "settings.icon_color.label"
+description_key = "settings.icon_color.description"
+default = "none"
+
+[[widget]]
+id = "widget"
+entry = "widget.luau"
+
+[[shortcut]]
+id = "shortcut"
+entry = "shortcut.luau"
+
+[[panel]]
+id = "main"
+entry = "panel.luau"
+width = 1120
+height = 360
+placement = "floating"
+position = "center"
+dismiss_on_outside_click = true
+keyboard_focus = "on_demand"
+capture_keys = [
+  "escape",
+  "q",
+  "j",
+  "k",
+  "h",
+  "l",
+  "r",
+  "return",
+  "space",
+  "left",
+  "right",
+  "up",
+  "down",
+]

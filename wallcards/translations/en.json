@@ -1,0 +1,19 @@
+{
+  "widget": {
+    "tooltip": "Wallcards"
+  },
+  "settings": {
+    "wallpaper_dir": {
+      "label": "Wallpapers Folder",
+      "description": "Directory containing all wallpapers (both images and videos)"
+    },
+    "card_height": {
+      "label": "Card Height",
+      "description": "Height in pixels of the card carousel"
+    },
+    "icon_color": {
+      "label": "Icon Color",
+      "description": "Custom color for the panel bar icon"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "widget": {
+    "tooltip": "Wallcards"
+  },
+  "settings": {
+    "wallpaper_dir": {
+      "label": "Carpeta de Wallpapers",
+      "description": "Directorio donde se encuentran todos los fondos de pantalla (imágenes y vídeos)"
+    },
+    "card_height": {
+      "label": "Altura de las Tarjetas",
+      "description": "Altura en píxeles del carrusel de tarjetas"
+    },
+    "icon_color": {
+      "label": "Color del Icono",
+      "description": "Color personalizado para el icono del panel superior"
+    }
+  }
+}
