@@ -1,0 +1,10 @@
+[[plugin]]
+id = "imhatsune/wallcards"
+name = "Wallcards"
+version = "0.4.0"
+plugin_api = 16
+author = "Imhatsune"
+license = "MIT"
+description = "A unified wallpaper manager and carousel for static images and video wallpapers (via gslapper) with dynamic shell theming and auto-refresh. Dependencies: imagemagick, gslapper, ffmpeg."
+tags = ["desktop", "theming", "wallpaper", "video", "gslapper"]
+dependencies = ["imagemagick", "gslapper", "ffmpeg"]
