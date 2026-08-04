@@ -10,9 +10,9 @@ This repo is a hobbie
 # Method 1: Graphical install
 1. Open Settings → Plugins → Sources
 2. Choose Add custom repository
-3. Open Settings → Plugins → Install and select wallcards
+3. Add repository 
 
-# Method 2: Installa via Terminal
+# Method 2: Install via Terminal
 ```sh
 noctalia msg plugins source add Hatplugins git https://github.com/imhatsune03/my-noctalia-plugins
 ```
