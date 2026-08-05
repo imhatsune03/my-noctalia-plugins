@@ -3,7 +3,7 @@
 A high-performance, aesthetically crafted wallpaper manager and carousel for **[Noctalia](https://github.com/noctalia-dev/noctalia)** supporting both **Static Images** and **Live Video Wallpapers** (via `gslapper`) with dynamic shell color extraction.
 
 # Preview
-![Preview](/home/hatsu03/Imágenes/wallcard.png)
+![Preview](wallcard.png)
 ---
 
 ## ✨ Features
