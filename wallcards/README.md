@@ -4,6 +4,8 @@ A high-performance, aesthetically crafted wallpaper manager and carousel for **[
 
 # Preview
 ![Preview](wallcard.png)
+
+![Preview](preview.mp4)
 ---
 
 ## ✨ Features
