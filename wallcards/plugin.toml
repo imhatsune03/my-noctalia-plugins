@@ -1,11 +1,11 @@
 id = "imhatsune/wallcards"
 name = "Wallcards"
-version = "0.4.0"
+version = "0.5.0"
 plugin_api = 16
 author = "Imhatsune"
 license = "MIT"
-description = "A unified wallpaper manager and carousel for static images and video wallpapers (via gslapper) with dynamic shell theming and auto-refresh. Dependencies: imagemagick, gslapper, ffmpeg."
-tags = ["desktop", "theming", "wallpaper", "video", "gslapper"]
+description = "A unified wallpaper manager for static images, video wallpapers (via gslapper), and Wallpaper Engine scenes (via waywallen-display)."
+tags = ["desktop", "theming", "wallpaper", "video", "gslapper", "wallpaper-engine", "waywallen"]
 dependencies = ["imagemagick", "gslapper", "ffmpeg"]
 
 [[setting]]
@@ -14,6 +14,20 @@ type = "folder"
 label_key = "settings.wallpaper_dir.label"
 description_key = "settings.wallpaper_dir.description"
 default = "~/Imágenes/Wallpapers"
+
+[[setting]]
+key = "engine_wallpaper_dir"
+type = "folder"
+label_key = "settings.engine_wallpaper_dir.label"
+description_key = "settings.engine_wallpaper_dir.description"
+default = "~/.steam/steam/steamapps/workshop/content/431960"
+
+[[setting]]
+key = "waywallen_bin"
+type = "string"
+label_key = "settings.waywallen_bin.label"
+description_key = "settings.waywallen_bin.description"
+default = "~/.local/bin/waywallen-layer-shell"
 
 [[setting]]
 key = "card_height"
@@ -50,20 +64,5 @@ position = "center"
 dismiss_on_outside_click = true
 keyboard_focus = "on_demand"
 capture_keys = [
-  "escape",
-  "q",
-  "j",
-  "k",
-  "h",
-  "l",
-  "r",
-  "return",
-  "space",
-  "left",
-  "right",
-  "up",
-  "down",
-  "1",
-  "2",
-  "f5",
+  "escape", "q", "j", "k", "h", "l", "r", "return", "space", "left", "right", "up", "down", "1", "2", "3", "f5"
 ]
