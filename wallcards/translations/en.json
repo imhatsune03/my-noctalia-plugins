@@ -8,6 +8,14 @@
       "label": "Wallpapers Folder",
       "description": "Directory containing all wallpapers (both images and videos)"
     },
+    "engine_wallpaper_dir": {
+      "label": "Wallpaper Engine Folder",
+      "description": "Steam Workshop 431960 folder (or any folder containing scene.pkg wallpapers)"
+    },
+    "waywallen_bin": {
+      "label": "waywallen-layer-shell binary",
+      "description": "Path to the Waywallen layer-shell display client"
+    },
     "card_height": {
       "label": "Card Height",
       "description": "Height in pixels of the card carousel"

@@ -1,10 +1,10 @@
 id = "imhatsune/wallcards"
 name = "Wallcards"
 version = "0.5.0"
-plugin_api = 16
+plugin_api = 24
 author = "Imhatsune"
 license = "MIT"
-description = "A unified wallpaper manager for static images, video wallpapers (via gslapper), and Wallpaper Engine scenes (via waywallen-display)."
+description = "A unified wallpaper manager for static images, video wallpapers (via gslapper), and Wallpaper Engine scenes (via waywallen-layer-shell)."
 tags = ["desktop", "theming", "wallpaper", "video", "gslapper", "wallpaper-engine", "waywallen"]
 dependencies = ["imagemagick", "gslapper", "ffmpeg"]
 

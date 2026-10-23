@@ -8,6 +8,14 @@
       "label": "Carpeta de Wallpapers",
       "description": "Directorio donde se encuentran todos los fondos de pantalla (imágenes y vídeos)"
     },
+    "engine_wallpaper_dir": {
+      "label": "Carpeta de Wallpaper Engine",
+      "description": "Carpeta del Steam Workshop 431960 (o cualquier carpeta con wallpapers scene.pkg)"
+    },
+    "waywallen_bin": {
+      "label": "Binario waywallen-layer-shell",
+      "description": "Ruta al cliente de visualización waywallen-layer-shell"
+    },
     "card_height": {
       "label": "Altura de las Tarjetas",
       "description": "Altura en píxeles del carrusel de tarjetas"
