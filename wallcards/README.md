@@ -37,31 +37,38 @@ A high-performance, aesthetically crafted wallpaper manager and carousel for **[
 
 ## 📦 Dependencies
 
-Ensure the following tools are installed on your Linux system:
+Wallcards requires Noctalia v5 and the following tools:
 
 | Package | Command | Purpose |
 | --- | --- | --- |
 | **ImageMagick** | `magick` or `convert` | Fast image thumbnailing and dominant color palette extraction |
-| **FFmpeg** | `ffmpeg` | Frame extraction and metadata probing for video wallpapers |
+| **FFmpeg** | `ffmpeg`, `ffprobe` | Frame extraction and metadata probing for video wallpapers |
 | **gSlapper** | `gslapper` | High-performance Wayland video wallpaper daemon ([gSlapper GitHub](https://github.com/Nomadcxx/gSlapper)) |
-| **Waywallen** | `waywallen-layer-shell` | Wallpaper Engine renderer. The Waywallen app/daemon must be running so the plugin can select the scene through DBus |
-| **Python 3** | `python3` | Reads the Waywallen library DB to resolve the selected scene id (falls back to `sqlite3` when Python is unavailable) |
+| **Waywallen** | `waywallen`, `waywallen-layer-shell` | Wallpaper Engine daemon and renderer. The daemon must be running so the plugin can apply scenes through DBus; the layer-shell client paints them |
+| **Python 3** (recommended) | `python3` | Resolves the selected Wallpaper Engine scene ID from Waywallen's SQLite library |
+| **SQLite CLI** (fallback) | `sqlite3` | Optional fallback for Engine scene ID resolution when Python 3 is unavailable |
+| **systemd / D-Bus** | `busctl` | Sends `ApplyById`, `Mute`, and `Rescan` calls to the Waywallen daemon. Required for Engine controls |
+| **procps** | `pkill`, `pidof` | Detects and stops the video/Engine renderer processes when switching wallpapers |
+| **util-linux** | `setsid` | Starts `waywallen-layer-shell` as a detached background process |
+| **Bash** | `bash` | Runs the small helper scripts used for Engine ID lookup and process launching |
+
+> Most of these utilities are already present on a standard desktop Linux installation. `busctl` is provided by systemd, and `pkill`/`pidof` by the `procps`/`procps-ng` package.
 
 ### Installing Dependencies
 
 - **Arch Linux / Manjaro**:
   ```bash
-  sudo pacman -S imagemagick ffmpeg
+  sudo pacman -S imagemagick ffmpeg python sqlite procps-ng util-linux bash
   # Install gslapper from AUR:
   yay -S gslapper-bin # or build from https://github.com/Nomadcxx/gSlapper
   ```
 - **Fedora**:
   ```bash
-  sudo dnf install ImageMagick ffmpeg
+  sudo dnf install ImageMagick ffmpeg python3 sqlite procps-ng util-linux bash
   ```
 - **Ubuntu / Debian**:
   ```bash
-  sudo apt install imagemagick ffmpeg
+  sudo apt install imagemagick ffmpeg python3 sqlite3 procps util-linux bash
   ```
 
 ---
